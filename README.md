@@ -13,3 +13,10 @@ To check the front-end type this, just be warned that I didn't put too much work
 send this on time, but it could be easily transformed into something else
 
 ```npm run dev```
+
+and just visit http://localhost:3000/
+
+Thanks for the chance to showcase my work!
+
+dev: mateus talles
+email: mateustalles@gmail.com

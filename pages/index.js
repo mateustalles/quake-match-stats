@@ -11,7 +11,18 @@ export default function Home({ logs }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.section}>
-        <p>{JSON.stringify(logs)}</p>
+        <div>{logs.map((game, index) => {
+          const mainKey = Object.keys(game)[0];
+          const matchObject = game[mainKey];
+          return [<h3>{`Match ${index + 1}`}</h3>, Object.entries(matchObject).map(([key, value]) => {
+            return (
+            <ul>
+              <li>
+                {key}: {JSON.stringify(value)}
+              </li>
+            </ul>
+          )})]
+        })}</div>
       </div>
     </div>
   )

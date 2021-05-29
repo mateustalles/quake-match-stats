@@ -1,13 +1,12 @@
 .container {
   min-height: 100vh;
-  padding: 0 0.5rem;
+  padding: 3rem;
   display: flex;
   flex: row nowrap;
   max-width: 100vw;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
+  align-items: flex-start;
   height: 100vh;
-  overflow: hidden;
   background: linear-gradient(to right, transparent 20%, black 30%), url('../images/256px-Quake1cover.webp');
   background-size: contain;
   background-repeat: no-repeat; 
@@ -16,15 +15,23 @@
 .section {
   display: flex;
   flex: row wrap;
-  max-width: 30vw;
-  align-self: center;
+  justify-content: flex-end;
+  max-width: 100vw;
 }
 
-.section p {
+.section h3 {
+  text-align: right;
+  color: #9b6b53;
+}
+
+.section li {
+  position: relative;
   max-width: 30vw;
   word-wrap: break-word;
-  text-align: center;
+  text-align: right;
+  direction: rtl;
   color: #9b6b53;
+  list-style-image: url('../images/Quake-icon.png');
 }
 
 .main {
